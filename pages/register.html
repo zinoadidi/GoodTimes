@@ -1,0 +1,62 @@
+
+<form onsubmit="event.preventDefault();register();"
+      class="w3-card w3-padding w3-margin">
+    <div class="">
+        <h3>Register</h3>
+        <p>
+            Welcome to GoodTimes, enter your details below to Register
+            or click the login button If you have an account.
+        </p>
+    </div>
+
+    <div class="w3-margin-top">
+        <label>
+            Name
+            <input id="name" type="text" class="w3-input" required>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Location
+            <input id="location" type="text" class="w3-input" required>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Phone
+            <input id="phone" type="tel" class="w3-input" required>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Image
+            <input id="image" type="text" class="w3-input" required>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            About
+            <textarea id="about" type="text" class="w3-input" required>
+            </textarea>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Email
+            <input id="email" type="email" class="w3-input" required>
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Password
+            <input id="password" type="password" class="w3-input" required>
+        </label>
+    </div>
+
+    <div class="w3-margin-top w3-margin-bottom w3-round">
+        <button class="w3-bar w3-btn w3-padding-16 w3-green"> Sign Up </button>
+    </div>
+    <div class="w3-margin-top w3-margin-bottom w3-round">
+        <button class="w3-bar w3-btn w3-padding-16 w3-indigo" onclick="loadPage('login.html')" type="button"> Sign In </button>
+    </div>
+</form>

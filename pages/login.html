@@ -1,0 +1,34 @@
+
+<form onsubmit="event.preventDefault();login();"
+class="w3-card w3-padding w3-margin">
+    <div class="">
+        <h3>Login</h3>
+        <p>
+            Welcome to GoodTimes, If you have an account, enter your details below to login
+            or click the register button to make a new account.
+        </p>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Email
+            <input id="email" type="email" class="w3-input">
+        </label>
+    </div>
+    <div class="w3-margin-top">
+        <label>
+            Password
+            <input id="password" type="password" class="w3-input">
+        </label>
+    </div>
+    <div class="w3-margin-top w3-margin-bottom w3-round">
+        <button class="w3-bar w3-btn w3-padding-16 w3-green" type="submit"> Sign In </button>
+    </div>
+    <div class="w3-margin-top w3-margin-bottom w3-round">
+        <button class="w3-bar w3-btn w3-padding-16 w3-indigo"
+        onclick="loadPage('register.html')" type="button"> Sign Up </button>
+    </div>
+</form>
+
+
+
+<script src="app/user.js"></script>

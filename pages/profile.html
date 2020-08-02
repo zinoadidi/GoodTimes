@@ -1,0 +1,41 @@
+
+<section class="w3-container">
+        <div class="w3-margin w3-padding">
+            <img src="" alt="profile image" id="image" width="200px" class="w3-circle w3-card">
+            <i>
+                <p class="w3-padding" id="about">
+                    About
+                </p>
+            </i>
+        </div>
+        <table class="w3-margin w3-padding w3-table w3-striped">
+            <tr class="w3-padding-16 w3-margin">
+                <td>Name</td><td id="name"></td>
+            </tr>
+            <tr class="w3-padding-16 w3-margin">
+                <td>Phone</td><td id="phone"></td>
+            </tr>
+            <tr class="w3-padding-16 w3-margin">
+                <td>Email</td><td id="email">Email should be here</td>
+            </tr>
+            <tr class="w3-padding-16 w3-margin">
+                <td>Location</td><td id="location"></td>
+            </tr>
+
+        </table>
+</section>
+
+<script>
+    if(app.userDataToLoad){
+        showProfileData(
+            app.userDataToLoad,
+            "otherUsers"
+        );
+    }else{
+        showProfileData(
+            JSON.parse(sessionStorage.getItem("userData")),
+            "loggedInUser"
+        );
+    }
+
+</script>
